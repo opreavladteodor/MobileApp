@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"  
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"  
+             x:Class="MobileApp.View.WelcomePage2"  
+             Title="Cabinet VetPet "  
+             NavigationPage.HasBackButton="False"
+             BackgroundImage="bg.jpg">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" Padding="60" Spacing="30">
+            <Label Text="Bun Venit!" 
+                 TextColor="Blue"
+                 FontAttributes="Bold"
+                FontSize="Medium"
+                VerticalOptions="CenterAndExpand"   
+                HorizontalOptions="CenterAndExpand" />
+            <Button x:Name="rdemp" Text="Vezi Angajati" Clicked="viewEmp"
+                    HorizontalOptions="FillAndExpand"
+                   BackgroundColor="Transparent"
+                    TextColor="Blue"
+                    FontSize="Medium"/>
+            <Button x:Name="rdser" Text="Vezi Servicii si Preturi" Clicked="viewSer"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
+                    TextColor="Blue"
+                    FontSize="Medium"/>
+            <Button x:Name="newcl" Text="Client Nou" Clicked="addCl"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
+                    TextColor="Blue"
+                    FontSize="Medium"/>
+            <Button x:Name="addapt" Text="Adauga Programare" Clicked="addAp"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
+                    TextColor="Blue"
+                    FontSize="Medium"/>
+            <Button x:Name="addRe" Text="Adauga Notificare" Clicked="addRem"
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Transparent"
+                    TextColor="Blue"
+                    FontSize="Small"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 
